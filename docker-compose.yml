@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    image: haru256/shellgei160
+    container_name: shellgei160
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/shellgei
