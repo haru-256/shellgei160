@@ -7,4 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/home/shellgei
+      - home:/home/shellgei
+volumes:
+  home:
+    driver: local
